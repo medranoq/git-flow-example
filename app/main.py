@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 app = FastAPI(title="GitFlow Example API", version=__version__)
 
