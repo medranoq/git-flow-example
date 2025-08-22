@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 app = FastAPI(title="GitFlow Example API", version=__version__)
 
@@ -8,3 +8,10 @@ app = FastAPI(title="GitFlow Example API", version=__version__)
 def root():
     return {"message": f"Hello world! This is version {__version__}."}
 
+@app.get("/hello/{name}")
+def say_hello(name: str):
+    return {"message": f"Hello, {name}!"}
+
+@app.get("/version")
+def get_version():
+    return {"version": __version__}
