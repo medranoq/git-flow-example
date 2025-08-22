@@ -8,3 +8,6 @@ app = FastAPI(title="GitFlow Example API", version=__version__)
 def root():
     return {"message": f"Hello world! This is version {__version__}."}
 
+@app.get("/version")
+def get_version():
+    return {"version": __version__}
