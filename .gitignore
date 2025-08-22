@@ -7,3 +7,10 @@
 
 # Fix some bugs before releasing
 *.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
