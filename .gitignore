@@ -1,0 +1,9 @@
+# IDEs
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+
+# Fix some bugs before releasing
+*.log
